@@ -1,73 +1,66 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Colores */
-:root {
-  --negro: #000000;
-  --blanco: #ffffff;
-  --rojo: #d32f2f;
-}
-
-/* Body */
+/* Colores base */
 body {
-  background-color: var(--negro);
-  color: var(--blanco);
-  font-family: Arial, Helvetica, sans-serif;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 20px;
+  background-color: #000;  /* negro */
+  color: #fff;             /* texto blanco */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
-/* Header */
-header {
+/* Encabezados centrados */
+h1, h2, h3 {
   text-align: center;
-  margin-bottom: 40px;
-  border-bottom: 2px solid var(--rojo);
-  padding-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-header h1 {
-  font-size: 3rem;
-  color: var(--rojo);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-header nav a {
-  color: var(--rojo);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-}
-
-/* Título principal */
-h2 {
-  text-align: center;
-  color: var(--rojo);
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-/* Párrafo justificado */
+/* Texto justificado */
 p {
   text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
 }
 
-/* Footer */
-footer {
-  margin-top: 60px;
+/* Navegación */
+nav {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e10600; /* rojo */
+}
+
+/* Botón rojo */
+.boton {
+  display: inline-block;
+  background-color: #e10600; /* rojo */
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.boton:hover {
+  background-color: #b10400;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  margin-top: 3rem;
   font-size: 0.9rem;
-  color: #999;
+  color: #ccc;
 }
