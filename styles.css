@@ -5,106 +5,69 @@
   box-sizing: border-box;
 }
 
-/* Colores principales */
+/* Colores */
 :root {
   --negro: #000000;
   --blanco: #ffffff;
   --rojo: #d32f2f;
 }
 
-/* Fondo y fuente general */
+/* Body */
 body {
   background-color: var(--negro);
   color: var(--blanco);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* HEADER */
+/* Header */
 header {
+  text-align: center;
+  margin-bottom: 40px;
   border-bottom: 2px solid var(--rojo);
   padding-bottom: 15px;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  color: var(--rojo);
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
 header nav a {
   color: var(--rojo);
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  color: #ff6659;
+  text-decoration: underline;
 }
 
-/* Títulos centrados */
-h2, h3 {
+/* Título principal */
+h2 {
   text-align: center;
-  margin-bottom: 20px;
-  font-weight: 700;
   color: var(--rojo);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
-/* Párrafos justificados */
+/* Párrafo justificado */
 p {
   text-align: justify;
-  margin-bottom: 15px;
   font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Listas con margen y color */
-ul {
-  margin-left: 30px;
-  margin-bottom: 25px;
-  list-style-type: disc;
-  color: var(--blanco);
-  font-size: 1.1rem;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* Secciones */
-section {
-  margin-bottom: 40px;
-}
-
-/* Botón correo */
-.boton {
-  display: inline-block;
-  background-color: var(--rojo);
-  color: var(--blanco);
-  padding: 12px 25px;
-  font-weight: 700;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  font-size: 1.2rem;
-}
-
-.boton:hover {
-  background-color: #b71c1c;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
+  margin-top: 60px;
   text-align: center;
-  border-top: 2px solid var(--rojo);
-  padding: 15px 0;
-  margin-top: 50px;
   font-size: 0.9rem;
-  color: #aaa;
+  color: #999;
 }
