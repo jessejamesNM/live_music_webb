@@ -39,6 +39,11 @@ nav a:hover {
   color: #e10600; /* rojo */
 }
 
+/* Centrar contenido de sección contacto */
+.contacto {
+  text-align: center;
+}
+
 /* Botón rojo */
 .boton {
   display: inline-block;
